@@ -3,31 +3,57 @@
 @use "../utils/variables" as *;
 
 .home {
-  @include displayFlex($gap: 10rem);
+    @include displayFlex($direction:column);
+ 
+  @include md{
+    @include displayFlex();
+
+  }
   align-items: center;
+  justify-content: space-between;
 }
+
 .home__content {
   font-size: $font-size3;
+  @include displayFlex($direction:column ,$gap:2rem);
+
   color: $text-color;
   text-align: center;
+  .home__button{
+    @include  displayFlex($direction:column)
+  }
   @include md {
     text-align: left;
+    .home__button{
+      @include  displayFlex();
+      justify-content:space-between
+    }
   }
+  
   .text1 {
-    animation: slideInFromLeft 1s linear;
+    animation: slideInFromLeft 0.5s linear;
   }
   .text2 {
-    animation: slideInFromLeft 1.5s linear;
+    animation: slideInFromLeft 0.5s linear forwards;
+    animation-delay: 0.5s;
+    visibility: hidden;
   }
   .text3 {
     animation: appear 1.5s linear forwards;
+    animation-delay: 0.5s;
+
   }
 
-  img {
-    width: 100%;
-    object-fit: cover;
-  }
+ 
 }
+.code-img {
+  width: 100%;
+  object-fit: contain;
+  padding:1.2rem;
+  border-radius:50%;
+  aspect-ratio: 1;
+  }
+
 
 .text1::after {
   display: inline-block;
@@ -35,26 +61,31 @@
   animation: wave 1.6s linear infinite;
 }
 
-.text3::before{
-    display: block;
-    content:"<p>";
-    font-size:$font-size2;
-    color:$grey;
-    font-family: $dancing-script;
+
+.text3::before {
+  display: block;
+  content: "<p>";
+  margin-left:-19rem;
+  @include md{
+    margin-left: 0;
+  }
+  font-size: $font-size3;
+  color: $grey;
+  font-family: $dancing-script;
 }
 
-.text3::after{
-    display: block;
-    content:"</p>";
-    margin-left:22rem;
-    font-size:$font-size2;
-    color:$grey;
-    font-family: $dancing-script;
+.text3::after {
+  display: block;
+  content: "</p>";
+  
+    margin-left:18rem;
+  @include lg{
+  margin-left: 22rem;
+  }
+  font-size: $font-size3;
+  color: $grey;
+  font-family: $dancing-script;
 }
 
 
-.home__gif{
-    border:2px solid red;
-    border-radius: 50%;
-    aspect-ratio: 1;
-}
+ 

@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import { BrowserRouter as Router } from "react-router-dom";
 import About from "./pages/About";
+import Projects from "./pages/Projects";
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
     <Router>
       <Navbar />
       <Home />
+      <Projects/>
       <About />
     </Router>
   );
