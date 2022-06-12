@@ -1,0 +1,38 @@
+@keyframes slideTop {
+    from {
+      transform: translateY(-10px);
+    }
+    to {
+      transform: translateY(30px);
+    }
+  }
+  
+
+  @keyframes wave{
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  
+  100% { transform: rotate( 0deg) }
+}
+
+@keyframes slideInFromLeft {
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+@keyframes appear {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}

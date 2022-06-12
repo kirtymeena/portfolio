@@ -1,0 +1,68 @@
+@use "../utils/variables" as *;
+
+// common to all buttons
+.btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: $text-color;
+  font-size: $font-size4;
+  padding-inline: 2.2rem;
+  padding-block: 0.7rem;
+  border-radius: 20px;
+  text-align: center;
+  span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  span:after {
+    content: "\00bb";
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+}
+
+.btn:hover span {
+  padding-right: 25px;
+}
+
+.btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+// primary button
+.btn-primary {
+  background-color: $primary-light;
+}
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: $primary-dark;
+  color: white;
+}
+.btn-primary:active {
+  background-color: $primary-light;
+}
+
+.btn-secondary {
+  border: 2px solid $primary-light;
+  transition: background 250ms ease-in-out;
+}
+
+// secondary button
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+  background-color: $primary-light;
+}
+
+.btn-secondary:active {
+  background-color: $primary-dark;
+  border: 2px solid $primary-dark;
+  color: white;
+}

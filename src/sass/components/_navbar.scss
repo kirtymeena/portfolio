@@ -1,0 +1,105 @@
+@use "../utils/mixin" as *;
+@use "../utils/breakpoints" as *;
+@use "../utils/variables" as *;
+
+.navbar {
+  @include displayFlex();
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  z-index: $z-fixed;
+  background-color: #1e1e2f;
+  @include md{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+}
+
+.menu-items-lg {
+  display: none;
+}
+
+
+.navbar__logo{
+    h1{
+        font-family: $dancing-script;
+        font-size: 2rem;;
+        
+    }
+    h1::before{
+        display:inline;
+        margin-right:4px;
+        content:"<";
+        color:$grey
+    }
+    h1::after{
+        display:inline;
+        margin-left:4px;
+        content:"/>";
+        color:$grey
+    }
+}
+
+
+
+// menu items for small screen
+.menu-items-sm {
+  svg {
+    cursor: pointer;
+  }
+}
+
+.open {
+  display: block;
+  background-color: #1e1e2f;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  @include displayFlex($direction: row, $gap: 2rem);
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  padding-block: 2rem;
+  left: 0;
+  right: 0;
+  width: 100%;
+  animation: slideTop 0.5s forwards;
+  .nav__item {
+    @include displayFlex($direction: column-reverse);
+    justify-content: center;
+    align-items: center;
+  }
+}
+.close {
+  display: none;
+}
+
+
+
+
+
+// show menu items for tablet and desktops
+@include md {
+  .menu-items-lg {
+    display: block;
+    @include displayFlex($gap: 3rem);
+    font-size: $font-size4;
+  }
+  .navbar__menu-sm {
+    display: none;
+  }
+
+  .underline-indicator::after{
+    display: block;
+    content:" ";
+    border-bottom: 2px solid $primary-light;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+  }
+
+  .active::after,.underline-indicator:hover::after{
+    transform: scaleX(1);
+  }
+
+  
+}
+

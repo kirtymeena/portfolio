@@ -1,0 +1,41 @@
+@use "../utils/variables" as *;
+@use "./breakpoints" as *;
+
+.white-content {
+    background: #e4e4e4;
+  }
+
+
+.uppercase{
+    text-transform: uppercase;
+}
+.letter-spacing{
+    letter-spacing: 1.2px;
+}
+.letter-spacing2{
+    letter-spacing: 0.4rem;
+}
+.line-height{
+    line-height: 1.6rem;
+}
+
+.container{
+    padding-inline:2rem;
+    padding-block:2rem;
+    @include lg{
+        padding-inline:6rem ;
+    }
+}
+
+.container-wrap{
+    padding-inline: 2rem;
+    padding-block:12rem;
+    @include lg{
+        padding-inline: 6rem;
+    }
+}
+
+.link{
+    text-decoration: none;
+    color:$text-color
+}
