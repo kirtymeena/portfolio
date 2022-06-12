@@ -1,9 +1,9 @@
 import React from "react";
-import codingFemale from "../images/Capture-removebg-preview.png";
+import codingFemale from "../assets/images/Capture-removebg-preview.png";
 import PrimaryButton from "../components/buttons/PrimaryButton"
 const Home = () => {
   const openResume=()=>{
-   window.location="https://www.frontendmentor.io/home"
+    
   }
   return (
     <div id="home" className="home container-wrap">
