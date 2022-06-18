@@ -51,6 +51,7 @@
   }
 
   .text3 {
+    font-size:$font-size3;
     animation: tracking-in-expand 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
     animation-delay: 0.5s;
   }
