@@ -1,9 +1,13 @@
-@keyframes slideTop {
-  from {
-    transform: translateY(-10px);
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
   }
-  to {
-    transform: translateY(30px);
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
@@ -34,16 +38,7 @@
   }
 }
 
-@keyframes slideInFromLeft {
-  from {
-    transform: translateX(-100%);
-    visibility: visible;
-  }
-  to {
-    transform: translateX(0);
-    visibility: visible;
-  }
-}
+
 
 @keyframes appear {
   from {
@@ -51,6 +46,7 @@
   }
   to {
     opacity: 1;
+    visibility: visible;
   }
 }
 

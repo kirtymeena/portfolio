@@ -3,10 +3,12 @@
 @use "../utils/variables" as *;
 
 .home {
-    @include displayFlex($direction:column);
-  @include md{
+  @include displayFlex($direction: column);
+  background-image: url("../../assets/vector-magic-dust-isolated-transparent-background-blue-dust-png-magical-glow-png-blue-light_156846-1432-removebg-preview.png");
+  background-position: center;
+  width: 100%;
+  @include md {
     @include displayFlex();
-
   }
   align-items: center;
   justify-content: space-between;
@@ -14,47 +16,48 @@
 
 .home__content {
   font-size: $font-size3;
-  @include displayFlex($direction:column ,$gap:2rem);
+  @include displayFlex($direction: column, $gap: 2rem);
 
   color: $text-color;
   text-align: center;
-  .home__button{
-    @include  displayFlex($direction:column)
+  .home__button {
+    @include displayFlex($direction: column);
+    animation: appear 1s linear forwards;
+    animation-delay: 1s;
+    opacity: 0;
+
   }
   @include md {
     text-align: left;
-    .home__button{
-      @include  displayFlex();
-      justify-content:space-between
+    .home__button {
+      @include displayFlex();
+      justify-content: space-between;
     }
   }
-  
+
   .text1 {
-    animation: slideInFromLeft 0.5s linear;
+
+    animation: tracking-in-expand 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
   }
+
   .text2 {
-    animation: slideInFromLeft 0.5s linear forwards;
+    animation: tracking-in-expand 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
     animation-delay: 0.5s;
-    visibility: hidden;
+    
   }
-  
- 
+
   .text3 {
-    animation: appear 1.5s linear forwards;
+    animation: tracking-in-expand 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
     animation-delay: 0.5s;
-
   }
-
- 
 }
 .code-img {
   width: 100%;
   object-fit: contain;
-  padding:1.2rem;
-  border-radius:50%;
+  padding: 1.2rem;
+  border-radius: 50%;
   aspect-ratio: 1;
-  }
-
+}
 
 .text1::after {
   display: inline-block;
@@ -62,12 +65,11 @@
   animation: wave 1.6s linear infinite;
 }
 
-
 .text3::before {
   display: block;
   content: "<p>";
-  margin-left:-19rem;
-  @include md{
+  margin-left: -19rem;
+  @include md {
     margin-left: 0;
   }
   font-size: $font-size3;
@@ -78,14 +80,13 @@
 .text3::after {
   display: block;
   content: "</p>";
-  
-    margin-left:18rem;
-  @include lg{
-  margin-left: 22rem;
+
+  margin-left: 18rem;
+  @include lg {
+    margin-left: 22rem;
   }
   font-size: $font-size3;
   color: $grey;
   font-family: $dancing-script;
+  
 }
-
-
