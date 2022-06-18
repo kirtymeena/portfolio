@@ -17,7 +17,7 @@
 .home__content {
   font-size: $font-size3;
   @include md{
-    font-size: $font-size5;
+    font-size: 3rem;
   }
   @include displayFlex($direction: column, $gap: 2rem);
 
