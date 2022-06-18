@@ -29,8 +29,9 @@
 
 .container-wrap{
     padding-inline: 2rem;
-    padding-top:10rem;
-    // padding-bottom:4rem;
+    padding-top:9rem;
+    
+    
     @include lg{
         padding-inline: 6rem;
     }

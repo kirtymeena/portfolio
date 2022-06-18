@@ -67,7 +67,7 @@ const Navbar = () => {
               className={`link underline-indicator ${
                 active === "Education" ? "active" : ""
               }`}
-              to="#eduction"
+              to="#education"
               smooth
             >
               Education
@@ -142,7 +142,7 @@ const Navbar = () => {
                 </div>
               </div>
             </Link>
-            <Link className="link" to="#eduction" smooth>
+            <Link className="link" to="#education" smooth>
               <div className="nav__item">
                 Education
                 <div>

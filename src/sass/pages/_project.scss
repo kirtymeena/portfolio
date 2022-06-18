@@ -1,0 +1,88 @@
+@use "../utils/mixin" as *;
+@use "../utils/breakpoints" as *;
+@use "../utils/variables" as *;
+
+.project {
+  @include displayFlex($direction: column, $gap: 8rem);
+  justify-content: center;
+  align-items: center;
+  .label {
+    // padding-bottom: 2rem;
+    text-align: center;
+    font-size: $font-size5;
+    background: -moz-linear-gradient(#fb408f, #fae937);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+}
+
+
+
+
+.project__card {
+  @include displayFlex($direction: column-reverse, $gap: 2rem);
+  justify-content: space-between;
+  align-items: center;
+  h1 {
+    font-size: $font-size3;
+  }
+
+  p {
+    font-size: $font-size2;
+    color: $stone;
+    line-height: $line-height;
+    margin-top: 2rem;
+  }
+  h2 {
+    margin-top: 2rem;
+  }
+
+  @include md {
+    @include displayFlex($gap: 4rem);
+    h1 {
+      text-align: left;
+    }
+
+    p {
+      text-align: left;
+
+      span {
+        padding-right: 4rem;
+      }
+    }
+  }
+  .project__image {
+    width: 100%;
+    @include displayFlex($direction: column);
+    // align-items: center;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .project__content {
+    @include displayFlex($direction: column);
+  }
+  svg {
+    margin-inline: 0.7rem;
+    margin-block: 1rem;
+  }
+}
+
+
+@include md{
+    .project__card:nth-child(odd){
+        @include displayFlex($direction:row-reverse,$gap: 4rem)
+    }
+}
+
+.more{
+  font-weight: 700;
+  text-decoration: underline;
+  cursor:pointer
+}
+.more:hover{
+  color:$primary-dark
+}

@@ -4,15 +4,21 @@ import Home from "./pages/Home";
 import { BrowserRouter as Router } from "react-router-dom";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
+import Education from "./pages/Education";
 
 function App() {
-
   return (
     <Router>
-      <Navbar />
-      <Home />
-      <Projects/>
-      <About />
+      <div className="header">
+        <Navbar />
+      </div>
+      <div className="components">
+        <Home />
+
+        <Projects />
+        <Education />
+        <About />
+      </div>
     </Router>
   );
 }
