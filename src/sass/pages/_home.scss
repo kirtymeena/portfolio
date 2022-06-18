@@ -34,7 +34,7 @@
     text-align: left;
     .home__button {
       @include displayFlex();
-      justify-content: center;
+      justify-content: space-between;
     }
   }
 
