@@ -35,6 +35,7 @@
     .home__button {
       @include displayFlex();
       justify-content: space-between;
+      width:25rem;
     }
   }
 

@@ -22,8 +22,8 @@
 
 .project__card {
   @include displayFlex($direction: column-reverse, $gap: 2rem);
-  justify-content: space-between;
-  // align-items: center;
+  // justify-content: space-between;
+  align-items: center;
   ;
   h1 {
     font-size: $font-size3;
