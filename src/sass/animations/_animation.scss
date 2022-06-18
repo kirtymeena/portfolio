@@ -1,13 +1,9 @@
-@keyframes tracking-in-expand {
-  0% {
-    letter-spacing: -0.5em;
-    opacity: 0;
+@keyframes slideTop {
+  from {
+    transform: translateY(-10px);
   }
-  40% {
-    opacity: 0.6;
-  }
-  100% {
-    opacity: 1;
+  to {
+    transform: translateY(30px);
   }
 }
 
@@ -46,7 +42,6 @@
   }
   to {
     opacity: 1;
-    visibility: visible;
   }
 }
 
@@ -60,4 +55,20 @@
   99% { transform:translateY(-3%); }
   100% { transform:translateY(0); }
 }
+
+
+
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 
