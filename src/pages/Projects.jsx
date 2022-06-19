@@ -6,7 +6,7 @@ import home from "../assets/images/space-travel/home.PNG";
 import destination from "../assets/images/space-travel/destination.PNG";
 import crew from "../assets/images/space-travel/crew.PNG";
 import technology from "../assets/images/space-travel/technology.PNG";
-import dashboard from "../assets/images/time-tracking-dashboard/dashboard.PNG"
+import dashboard from "../assets/images/time-tracking-dashboard/dashboard.PNG";
 const Projects = () => {
   return (
     <div id="project" className="project container-wrap">
@@ -39,7 +39,13 @@ const Projects = () => {
 
         <div className="project__content">
           <div className="content__heading">
+            <div>
             <h1 className="letter-spacing">Todo App</h1>
+            </div>
+            <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="2rem" viewBox="0 0 24 24"><path fill="#B9B5B5" d="M13,14H9a1,1,0,0,0,0,2h4a1,1,0,0,0,0-2ZM17,4H15.82A3,3,0,0,0,13,2H11A3,3,0,0,0,8.18,4H7A3,3,0,0,0,4,7V19a3,3,0,0,0,3,3H17a3,3,0,0,0,3-3V7A3,3,0,0,0,17,4ZM10,5a1,1,0,0,1,1-1h2a1,1,0,0,1,1,1V6H10Zm8,14a1,1,0,0,1-1,1H7a1,1,0,0,1-1-1V7A1,1,0,0,1,7,6H8V7A1,1,0,0,0,9,8h6a1,1,0,0,0,1-1V6h1a1,1,0,0,1,1,1Zm-3-9H9a1,1,0,0,0,0,2h6a1,1,0,0,0,0-2Z"/></svg>
+
+            </div>
           </div>
           <div className="content__text">
             <p>
@@ -164,7 +170,12 @@ const Projects = () => {
         </div>
         <div className="project__content">
           <div className="content__heading">
+            <div>
             <h1 className="letter-spacing">Space Tourism Website</h1>
+            </div>
+            <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="2rem" data-name="Layer 1" viewBox="0 0 24 24"><path fill="#B9B5B5" d="M22.60107,2.062a1.00088,1.00088,0,0,0-.71289-.71289A11.25224,11.25224,0,0,0,10.46924,4.97217L9.35431,6.296l-2.6048-.62848A2.77733,2.77733,0,0,0,3.36279,7.0249L1.1626,10.9248A.99989.99989,0,0,0,1.82422,12.394l3.07275.65869a13.41952,13.41952,0,0,0-.55517,2.43409,1.00031,1.00031,0,0,0,.28466.83642l3.1001,3.1001a.99941.99941,0,0,0,.707.293c.02881,0,.05762-.00147.08692-.00391a12.16892,12.16892,0,0,0,2.49157-.49l.64368,3.00318a1.0003,1.0003,0,0,0,1.46924.66162l3.90527-2.20264a3.03526,3.03526,0,0,0,1.375-3.30371l-.6687-2.759,1.23706-1.13751A11.20387,11.20387,0,0,0,22.60107,2.062ZM3.57227,10.72314,5.12842,7.96338a.82552.82552,0,0,1,1.06982-.37549l1.71741.4162-.65.77179A13.09523,13.09523,0,0,0,5.67633,11.174Zm12.47021,8.22217L13.32666,20.477l-.4295-2.00464a11.33992,11.33992,0,0,0,2.41339-1.61987l.74353-.68366.40344,1.66462A1.041,1.041,0,0,1,16.04248,18.94531ZM17.65674,11.98l-3.68457,3.38623a9.77348,9.77348,0,0,1-5.17041,2.3042l-2.4043-2.4043a10.932,10.932,0,0,1,2.40088-5.206l1.67834-1.99268a.9635.9635,0,0,0,.07813-.09277L11.98975,6.271a9.27757,9.27757,0,0,1,8.80957-3.12012A9.21808,9.21808,0,0,1,17.65674,11.98Zm-.923-6.16376a1.5,1.5,0,1,0,1.5,1.5A1.49992,1.49992,0,0,0,16.7337,5.81622Z"/></svg>
+            </div>
           </div>
           <div className="content__text">
             <p>
@@ -240,12 +251,11 @@ const Projects = () => {
       </div>
 
       {/* card3 */}
-      <div className="project__card">
+      <div className="project__card card3">
         <div className="project__image">
           <div>
             <img src={dashboard} alt="dashboard" />
           </div>
-          
 
           <div
             className="project-btn"
@@ -268,7 +278,24 @@ const Projects = () => {
         </div>
         <div className="project__content">
           <div className="content__heading">
-            <h1 className="letter-spacing">Time Tracking Dashboard</h1>
+            <div className="content__title">
+            <h1 className="letter-spacing">Time Tracking Dashboard  </h1>
+            </div>
+            <div className="content__svg">
+            <svg
+              id="Layer_1"
+              data-name="Layer 1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="2rem"
+            >
+              <path
+                fill="#B9B5B5"
+                d="M12,6a.99974.99974,0,0,0-1,1v4.38379L8.56934,12.60693a.99968.99968,0,1,0,.89843,1.78614l2.98145-1.5A.99874.99874,0,0,0,13,12V7A.99974.99974,0,0,0,12,6Zm0-4A10,10,0,1,0,22,12,10.01146,10.01146,0,0,0,12,2Zm0,18a8,8,0,1,1,8-8A8.00917,8.00917,0,0,1,12,20Z"
+              />
+            </svg>
+            </div>
+            
           </div>
           <div className="content__text">
             <p>
@@ -336,15 +363,7 @@ const Projects = () => {
           </div>
         </div>
       </div>
-      <div className="more">
-        <p
-          onClick={() =>
-            (window.location.href = "https://github.com/kirtymeena")
-          }
-        >
-          more project
-        </p>
-      </div>
+     
     </div>
   );
 };

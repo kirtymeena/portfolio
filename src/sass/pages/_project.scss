@@ -6,25 +6,20 @@
   @include displayFlex($direction: column, $gap: 8rem);
   justify-content: center;
   align-items: center;
-  .label {
-    // padding-bottom: 2rem;
-    text-align: center;
-    font-size: $font-size5;
-    background: -moz-linear-gradient(#fb408f, #fae937);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-
+ 
 }
-
-
-
+.label {
+  text-align: center;
+  font-size: $font-size5;
+  background: -moz-linear-gradient(#fb408f, #fae937);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 .project__card {
   @include displayFlex($direction: column-reverse, $gap: 2rem);
   // justify-content: space-between;
   align-items: center;
-  ;
   h1 {
     font-size: $font-size3;
   }
@@ -72,18 +67,15 @@
   }
 }
 
-
-@include md{
-    .project__card:nth-child(odd){
-        @include displayFlex($direction:row-reverse,$gap: 4rem)
-    }
+@include md {
+  .project__card:nth-child(odd) {
+    @include displayFlex($direction: row-reverse, $gap: 4rem);
+  }
 }
 
-.more{
-  font-weight: 700;
-  text-decoration: underline;
-  cursor:pointer
-}
-.more:hover{
-  color:$primary-dark
+
+.content__heading{
+  @include displayFlex();
+  justify-content:center;
+  align-items: center;
 }

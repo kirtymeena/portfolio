@@ -4,7 +4,6 @@ import Home from "./pages/Home";
 import { BrowserRouter as Router } from "react-router-dom";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
-import Education from "./pages/Education";
 
 function App() {
   return (
@@ -16,7 +15,7 @@ function App() {
         <Home />
 
         <Projects />
-        <Education />
+
         <About />
       </div>
     </Router>
