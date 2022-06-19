@@ -10,7 +10,7 @@ const Contact = () => {
       </div>
       <div className="contact__buttons">
         <div
-          onClick={() => (window.location.href = "mailto:kirtymeena@gmail.com")}
+          onClick={() => (window.location.href = "mailto:kirtymeena.dev@gmail.com")}
           className="gmail"
         >
           <img src={gmail} alt="email" />

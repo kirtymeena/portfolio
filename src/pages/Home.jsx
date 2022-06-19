@@ -9,7 +9,7 @@ const Home = () => {
   };
 
   const redirectToMail = () => {
-    window.location.href = "mailto:kirtymeena@gmail.com";
+    window.location.href = "mailto:kirtymeena.dev@gmail.com";
   };
 
   return (
