@@ -4,9 +4,11 @@
 
 .home {
   @include displayFlex($direction: column);
-  background-image: url("../../assets/vector-magic-dust-isolated-transparent-background-blue-dust-png-magical-glow-png-blue-light_156846-1432-removebg-preview.png");
-  background-position: center;
+  // background-image: url("../../assets/vector-magic-dust-isolated-transparent-background-blue-dust-png-magical-glow-png-blue-light_156846-1432-removebg-preview.png");
+  // background-repeat: no-repeat;
+  // background-position: center;
   width: 100%;
+  height:100%;
   @include md {
     @include displayFlex();
   }
