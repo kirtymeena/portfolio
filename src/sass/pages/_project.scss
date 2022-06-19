@@ -12,6 +12,7 @@
   text-align: center;
   font-size: $font-size5;
   background: -moz-linear-gradient(#fb408f, #fae937);
+  background: -webkit-linear-gradient(#fb408f, #fae937);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
