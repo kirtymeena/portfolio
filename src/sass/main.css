@@ -6,6 +6,7 @@
 @use "./animations/animation";
 @use "./pages/home";
 @use "./pages/project";
-@use "./pages/about";
+@use "./pages/contact";
 @use "./animations/firefly";
+@use "./pages/footer";
 /*# sourceMappingURL=main.css.map */

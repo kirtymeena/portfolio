@@ -1,0 +1,31 @@
+@use "../utils/mixin" as *;
+@use "../utils/breakpoints" as *;
+@use "../utils/variables" as *;
+
+.about-container{
+    // text-align: center;
+    @include displayFlex($direction:column);
+    align-items: center;
+    width:100%;
+    span{
+        padding-inline:3rem;
+        font-size:$font-size2
+    }
+    p{
+        font-size: $font-size2;
+    }
+}
+
+.contact__buttons{
+    @include displayFlex();
+    
+}
+
+.title__about{
+    margin: 9rem 0 4rem;
+
+}
+
+.gmail,.linkedin{
+    cursor:pointer
+}

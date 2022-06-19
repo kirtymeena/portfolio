@@ -61,10 +61,10 @@ const Navbar = () => {
               className={`link underline-indicator ${
                 active === "About" ? "active" : ""
               }`}
-              to="#about"
+              to="#contact"
               smooth
             >
-              About
+              Contact
             </Link>
           </div>
         </div>
@@ -124,9 +124,9 @@ const Navbar = () => {
                 </div>
               </div>
             </Link>
-            <Link className="link" to="#about" smooth>
+            <Link className="link" to="#contact" smooth>
               <div className="nav__item">
-                About{" "}
+                Contact{" "}
                 <div>
                   <svg
                     width="2rem"
